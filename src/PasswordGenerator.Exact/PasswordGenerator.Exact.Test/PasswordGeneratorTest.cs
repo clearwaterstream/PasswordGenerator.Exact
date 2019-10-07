@@ -13,7 +13,7 @@ namespace clearwaterstream.Security.Test
         [Fact]
         public void LettersOnly()
         {
-            var pwd = PasswordGenerator.GeneratePassword(10, 0, 0, null);
+            var pwd = PasswordGenerator.GeneratePassword(10, 0, 0);
 
             Assert.True(pwd.Length == 10);
 
@@ -27,7 +27,7 @@ namespace clearwaterstream.Security.Test
         [Fact]
         public void TwoDigits()
         {
-            var pwd = PasswordGenerator.GeneratePassword(10, 2, 0, null);
+            var pwd = PasswordGenerator.GeneratePassword(10, 2, 0);
 
             Assert.True(pwd.Length == 10);
 
@@ -41,7 +41,7 @@ namespace clearwaterstream.Security.Test
         [Fact]
         public void TwoDigitsTwoSpecial()
         {
-            var pwd = PasswordGenerator.GeneratePassword(10, 2, 2, null);
+            var pwd = PasswordGenerator.GeneratePassword(10, 2, 2);
 
             Assert.True(pwd.Length == 10);
 
@@ -61,7 +61,7 @@ namespace clearwaterstream.Security.Test
 
             Parallel.For(0, 1000, i =>
             {
-                var pwd = PasswordGenerator.GeneratePassword(10, 2, 2, null);
+                var pwd = PasswordGenerator.GeneratePassword(10, 2, 2);
 
                 passwords.Add(pwd);
             });

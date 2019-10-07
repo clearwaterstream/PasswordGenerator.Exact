@@ -24,11 +24,13 @@ namespace clearwaterstream.Security
             }
         }
 
-        public static string GeneratePassword(int length, int numberOfDigits, int numberOfSpecialChars, char[] specialChars)
+        public static string GeneratePassword(int length, int numberOfDigits, int numberOfSpecialChars)
         {
-            if (specialChars == null)
-                specialChars = default_specialChars;
-            
+            return GeneratePassword(length, numberOfDigits, numberOfSpecialChars, default_specialChars);
+        }
+
+        public static string GeneratePassword(int length, int numberOfDigits, int numberOfSpecialChars, char[] specialChars)
+        {            
             var passwordMinLength = 8;
             var passwordMaxLength = 128;
 
