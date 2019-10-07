@@ -5,5 +5,10 @@ Crypro-secure random password generator that will generate the exact specified n
 
 * A password that's 10 characters long with 2 digits:
 ```csharp
-PasswordGenerator.GeneratePassword(10, 2, 0, null);
+var pwd PasswordGenerator.GeneratePassword(10, 2, 0, null);
+```
+
+* A password that's 10 characters long with 2 digits and 2 special characters:
+```csharp
+var pwd PasswordGenerator.GeneratePassword(10, 2, 4, null);
 ```
