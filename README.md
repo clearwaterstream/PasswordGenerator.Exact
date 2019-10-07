@@ -1,5 +1,5 @@
 # PasswordGenerator.Exact
-Designer babies? Ethically dubious. Designer passwords? Why not! This Crypro-secure random password generator will help you generate a password with an exact number of digits, special characters, and letters specified.
+Designer babies? Ethically dubious. Designer passwords? Why not! This crypro-secure random password generator will help you generate a password with an exact number of digits, special characters, and letters specified.
 
 ## Examples
 
